@@ -100,6 +100,12 @@ def ingest_repository(request: RepositoryRequest):
             )
 
         # --------------------------------
+        # Clean up temporary cloned files
+        # --------------------------------
+        import shutil
+        shutil.rmtree(repo_path, ignore_errors=True)
+
+        # --------------------------------
         # 6. Response
         # --------------------------------
 
