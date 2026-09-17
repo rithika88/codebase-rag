@@ -1,4 +1,4 @@
-# 🔍 Codebase RAG Assistant
+#  Codebase RAG Assistant
 
 An AI-powered assistant that lets you **chat with any GitHub repository**. Point it at a public repo, and ask anything — architecture questions, how to run it, where a feature is implemented, what dependencies it uses — and get accurate, grounded answers with cited source files and line numbers.
 
@@ -237,9 +237,3 @@ Full interactive API docs at [http://localhost:8000/docs](http://localhost:8000/
 Also indexes: `README`, `Dockerfile`, `Makefile`, `LICENSE`
 
 ---
-
-## 💡 Tips
-
-- **MacBook Performance**: Always start the backend with `--reload-dir app` to prevent Uvicorn's file watcher from scanning `venv/` and overheating your Mac.
-- **Suppressing HF Warning**: The `You are sending unauthenticated requests to the HF Hub` warning is harmless — the model is already cached locally and loads in milliseconds. No download occurs.
-- **Large Repositories**: Repos with 1,000+ files embed in seconds thanks to the local GPU with no API rate limits.
